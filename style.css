@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&display=swap');
+
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very_light_grayish_blue: hsl(210, 60%, 98%);
+    --Light_grayish_blue1: hsl(211, 68%, 94%);
+    --Light_grayish_blue2: hsl(205, 33%, 90%);
+    --Grayish_blue: hsl(219, 14%, 63%);
+    --Dark_grayish_blue: hsl(219, 12%, 42%);
+    --Very_dark_blue: hsl(224, 21%, 14%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Light_grayish_blue1);
+    font-size: 1rem;
+    max-width: 90rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+main {
+    gap: 0.625rem;
+    background-color: var(--White);
+    width: 60%;
+    padding: 16px 48px;
+    display: flex;
+    border-radius: 0.625rem;
+    flex-direction: column;
+    margin: 5%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    margin: 16px;
+    width: 10%;
+    float: left;
+}
+
+header p:first-child {
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.alert {
+    padding: 0 0.625rem;
+    color: var(--White);
+    background-color: var(--Blue);
+    border-radius: 0.3125rem;
+}
+
+main div {
+    border-radius: 0.3125rem;
+}
+
+span {
+    font-weight: 800;
+}
+
+small {
+    color: var(--Grayish_blue);
+}
+
+main div div {
+    line-height: 16px;
+}
+
+fieldset {
+    border-radius: 0.3125rem;
+    margin: 16px;
+    padding: 16px 32px;
+}
+
+fieldset:hover {
+    background-color: var(--Light_grayish_blue1);
+}
+
+.club {
+    color: var(--Blue);
+}
+
+.event {
+    color: var(--Dark_grayish_blue);
+}
+
+.chess {
+    float: right;
+}
+
+.kim {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kim div img {
+    width: 20%;
+}
+
+.kim p {
+    width: 160%;
+}
+
+.jacob, 
+.angela, 
+.mark {
+    background-color: var(--Light_grayish_blue1);
+}
+
+.span:hover:not(.alert) {
+    color: var(--Blue);
+}
+
+.dot {
+    margin-left: 0.625rem;
+    height: 0.625rem;
+    width: 0.625rem;
+    background-color: var(--Red);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+main div {
+    cursor: pointer;
+}
+
+.toogle:hover {
+    cursor: pointer;
+    color: var(--Blue);
+}
+
+@media screen and (max-width: 50rem) {
+    body {
+        background-color: var(--White);
+        font-size: 0.875rem;
+        max-width: auto;
+        min-width: 23.4375rem;
+    }
+    
+    main {
+        gap: 0.3125rem;
+        width: 100%;
+        padding: 16px 0;
+    }
+    
+    .kim p {
+        width: auto;
+    }
+    
+    .kim div div, #Nat div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .kim div img, .kim img {
+        width: 15%;
+    }
+    
+    header {
+         align-items: center;
+    }
+}
